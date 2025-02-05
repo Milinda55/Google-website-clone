@@ -17,4 +17,4 @@ This project is a front-end clone of the Google homepage using only HTML and CSS
 0.1.0
 
 ### License
-Copyright © 2025 Horizon Nexus Server. All Rights Reserved. This project is licensed under the [MIT License](LICENSE.txt)
+Copyright © 2025 Google website clone. All Rights Reserved. This project is licensed under the [MIT License](LICENSE.txt)
