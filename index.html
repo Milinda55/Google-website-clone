@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google website clone</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            font-size: 13px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+        }
+
+        #container {
+            height: 100vb;
+        }
+        #ribbon {
+            /*width: 1024px;*/
+            top: 0;
+            height: 60px;
+            padding: 6px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            /*position: fixed;*/
+
+            li {
+                padding: 20px;
+                display: flex;
+                cursor: pointer;
+
+            }
+            #sign {
+                height: 40px;
+                border: 1px solid black;
+                border-radius: 50px;
+                background-color: #0b57d0;
+                align-items: center;
+                color: white;
+
+                &:hover{
+                    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.29);
+                }
+            }
+        }
+        #g-img {
+
+            background-image: url("https://www.google.lk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 92px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+
+            img {
+                height: 92px;
+                width: auto;
+
+            }
+
+        }
+        #search {
+            height: 160px;
+            padding: 20px;
+            /*background-color: lightyellow;*/
+            /*display: flex;*/
+
+            #lbl-input {
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                height: 60px;
+                width: 100%;
+                /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.29);*/
+
+
+                & > input {
+                    width: 600px;
+                    height: 52px;
+                    padding: 10px 100px 10px 40px;
+                    outline: none;
+                    font-size: 16px;
+                    text-align: left;
+                    /*background-color: rgba(211, 211, 211, 0.38);*/
+                    border: 1px solid #dfe1e5;
+                    box-shadow: 0 2px 8px 0 rgba(60, 64, 67, 0.25);
+                    border-radius: 24px;
+
+                    background-image: url("img/search-icon.png"), url("img/microphone.png"), url("img/Google_Lens_Icon.svg.png");
+                    background-size: 15px, 13px, 20px;
+                    background-position: 15px center, right 60px center, right 20px center;
+                    background-repeat: no-repeat, no-repeat, no-repeat;
+
+                    &:hover {
+                        box-shadow: 0 2px 4px 0 rgba(60, 64, 67, 0.25);
+                    }
+
+                }
+            }
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div id="container">
+        <ul id="ribbon">
+            <li> <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&emr=1&ifkv=AVdkyDkr50xqEMByCvRQgVQZfdDSQt4CCwHIHOEMhN4GliK8BEOt1kL91rbL0LUxoOTDoY1AN458&ltmpl=default&ltmplcache=2&osid=1&passive=true&rm=false&scc=1&service=mail&ss=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-703611444%3A1738187526188878&ddm=1">Gmail</a> </li>
+            <li> <a href="https://www.google.lk/imghp?hl=en&ogbl">Images</a></li>
+            <li> <img src="/img/bxs-grid.svg"> </li>
+            <li id="sign">Sign in</li>
+        </ul>
+
+        <div id="g-img">
+        </div>
+
+        <div id="search">
+            <label id="lbl-input">
+                <div id="search-icon">
+                    <!--                  <img src="img/bx-search%20(1).svg" alt="search">-->
+                </div>
+                <input id="g-input" type="text" title="Search">
+            </label>
+
+        </div>
+
+        <div id="empty-space">
+            <div id="language">
+            </div>
+
+        </div>
+
+        <div id="sri">
+            <div>Sri Lanka</div>
+        </div>
+
+        <div id="bottom">
+            <ul id="bottom-left">
+                <li>About</li>
+                <li>Advertising</li>
+                <li>Business</li>
+                <li>How Search works</li>
+            </ul>
+
+            <ul id="bottom-right">
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Settings</li>
+
+            </ul>
+
+        </div>
+    </div>
+
+</body>
+</html>
