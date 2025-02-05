@@ -110,6 +110,34 @@
 
                 }
             }
+            .search-buttons {
+                /*height: 100px;*/
+                /*width: 100px;*/
+                height: 58px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                /*background-color: skyblue;*/
+                margin: 10px;
+                gap: 10px;
+
+                & > button {
+                    font-size: 14px;
+                    padding: 0 16px;
+                    margin: 11px 4px;
+                    height: 36px;
+                    border: none;
+                    background-color: #F8F9FA;
+                    color: #1F1F1F;
+                    cursor: pointer;
+
+                    &:hover {
+                        box-shadow: 0 2px 4px 0 rgba(60, 64, 67, 0.25);
+                    }
+                }
+            }
         }
 
     </style>
@@ -135,6 +163,10 @@
                 </div>
                 <input id="g-input" type="text" title="Search">
             </label>
+            <div class="search-buttons">
+                <button class="box">Google Search</button>
+                <button class="box">I'm Feeling Lucky</button>
+            </div>
 
         </div>
 
